@@ -1,0 +1,442 @@
+body{  }
+
+a {}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+input[type=file] {
+    display: inline-block;
+}
+
+input[type=radio] {
+    vertical-align: text-bottom;
+}
+
+input[type=url] {
+    width: 40%;
+    padding: 2px;
+}
+input:focus {
+    border:1px solid #eee;
+    border-color: rgba(99, 166, 220, 0.49) !important;
+    outline: 0 !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+}
+
+@media (min-width:768px) {
+    .container {
+        width:750px
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width:970px
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width:1080px;
+    }
+}
+
+/* for back to top button ---------------- */
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    right: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    right: 10px;
+}
+
+/* -------------  end back to top button ---------------- */
+
+
+/*   ------------  for header ------   */
+
+.header img{
+    width: 181px;
+    height: 40px;
+    margin: 15px 0px 25px 0px;
+}
+
+/*   ------------  end for header ------   */
+
+
+/* for menu ----------------  */
+
+.navbar {
+    margin-bottom: 0;
+
+}
+
+.navbar-default{    
+    background: #343538;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #666;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #00bcff;
+}
+
+.navbar ul li a, .navbar ul li a > * {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.top-bar .nav {
+    width: 100%;
+}
+
+
+.top-bar .nav>li>a:focus, .top-bar .nav>li>a:hover {
+    background-color: #fff;
+    color: #337ab7 !important;
+}
+
+.top-bar .navbar-nav>li  {
+    float: none;
+}
+
+
+.top-bar .navbar-nav>li>a  {
+    padding:5px 5px 15px 5px ;
+    color: #000 !important;
+    float: right;
+}
+
+/* end menu ---------------- */
+
+/* for slider ---------------- */
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-control {
+    width:1% !important ;
+}
+
+.home-slider .glyphicon-chevron-left{font-size: 15px;}
+.home-slider .glyphicon-chevron-right{font-size: 15px;}
+
+.carousel-control .slider-left-icon{
+    margin: 0px  0px 0px -5px ;
+    background: #555;
+    padding: 15px 0px;
+    height: 43px !important ;
+}
+
+.carousel-control .slider-right-icon{
+    margin: 0px -5px 0px 0px;
+    background: #555;
+    padding: 15px 0px;
+    height: 43px;
+}
+
+
+.carousel .carousel-inner .item {
+  opacity: 0.5;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel .carousel-inner .active {
+  opacity: 1;
+}
+.carousel .carousel-inner .active.left,
+.carousel .carousel-inner .active.right {
+  left: 0;
+  opacity: 0.5;
+  z-index: 1;
+}
+.carousel .carousel-inner .next.left,
+.carousel .carousel-inner .prev.right {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+}
+.carousel .carousel-control {
+  z-index: 2;
+}
+
+
+.carousel-indicators li{
+    background-color: green;
+}
+.carousel-indicators .active {
+    background-color: red;
+}
+
+
+
+/*   ------------  home style code --------------------  */
+
+
+
+
+/*   ==============  start content style ---  */
+
+.img-icon{
+    font-size: 50px;
+    background: lightgrey;
+    padding: 21px;
+    border-radius: 46px;
+
+}
+
+.firs-content{
+    padding: 30px 0px;
+    border-bottom: 1px solid #ddd ;
+    border-top: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.second-content{
+    padding: 30px 0px 20px 0px;
+}
+
+.second-content img{margin: 10px 0px;width: 100% ;border:1px solid #444;}
+
+.second-content h4{text-align: justify;}
+
+
+/*  ----  start alchemy page design --- */
+
+.alchemy-page-first-row {
+    margin:10px 0px ;
+    padding: 10px 0px ;
+}
+.vis-page-first-row {
+    margin:10px 0px ;
+    padding: 10px 0px ;
+}
+
+.upload-form {
+    margin:10px 0px ;
+    padding: 10px;
+}
+
+.upload-form .heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.upload-form label {
+    margin-bottom: 10px;
+}
+
+.upload-form span{
+    width: 235px;
+    padding-top: 8px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+
+/*   start footer style ---  */
+ 
+footer{
+    background: #2f3033;
+    border-top: 2px solid #ddd;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.footer{padding:20px;}
+
+.footer img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.copyright p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*  ========================  start for alchemy  style ==============
+
+======================================================  */
+
+
+#mynetwork,#alchemy {
+    width: 100%;
+    height: 900px;
+    border: 1px solid lightgray;
+}
+#mynetwork {
+    background: #000;
+}
+
+.selected{
+    background-color: #04B;
+}
+
+div.tabContent{}
+div.tabContenthide{display: none;}
+
+
+/*  ========================  end for alchemy  ==============
+
+======================================================  */
+
+/*    ----------------  end 1.css file code  ---- 
+
+----------- Start formlayout.css file code ---------------------   */
+
+.form-style-3{
+    margin: 40px 10px 30px 10px;
+}
+.form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-3 label > span{
+    float: left;
+    width: 160px;
+    color: #F072A9;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 small{
+    float: left;
+    width: 160px;
+    color: #F072A9;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #FFD2D2;
+    padding: 20px;
+    background: #FFF4F4;
+    box-shadow: inset 0px 0px 15px #FFE5E5;
+    -moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+    -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.form-style-3 fieldset legend {
+    color: #e0649a;
+    border-top: 1px solid #FFD2D2;
+    border-left: 1px solid #FFD2D2;
+    border-right: 1px solid #FFD2D2;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #FFF4F4;
+    padding: 0px 8px 3px 12px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow: -0px -1px 2px #F1F1F1;
+    -webkit-box-shadow: -0px -1px 2px #F1F1F1;
+    font-weight: bold;
+    font-size: 20px;
+    width: 25%;
+    margin-bottom: 0px;
+    border-bottom: 0;
+}
+.form-style-3 textarea{
+    width:250px;
+    height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 input[type=password],
+.form-style-3 select, 
+.form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid #FFC2DC;
+    outline: none;
+    color: #F072A9;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #FFD5E7;
+    -moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+    -webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+    background: #FFEFF6;
+    width:60%;
+}
+
+.required{
+    color:red;
+    font-weight:normal;
+}
+
+.form-style-2 fieldset {
+    border: 1px solid #d2ffdf;
+    background: #f7fff4;
+    box-shadow: inset 0px 0px 15px #e5ecff;
+    -moz-box-shadow: inset 0px 0px 15px #e5ecff;
+    -webkit-box-shadow: inset 0px 0px 15px #e5ecff;
+}
+
+.form-style-2 fieldset legend {
+    color: #6fad9e;
+    border-top: 1px solid rgba(100, 224, 195, 0.38);
+    border-left: 1px solid rgba(100, 224, 195, 0.38);
+    border-right: 1px solid rgba(100, 224, 195, 0.38);
+    background: #f7fff4;
+    box-shadow: -0px -1px 2px #e5ffe6;
+    -moz-box-shadow: -0px -1px 2px #e5ffe6;
+    -webkit-box-shadow: -0px -1px 2px #e5ffe6;
+}
+
+.form-style-2 input[type=text],
+.form-style-2 input[type=date],
+.form-style-2 input[type=datetime],
+.form-style-2 input[type=number],
+.form-style-2 input[type=search],
+.form-style-2 input[type=time],
+.form-style-2 input[type=url],
+.form-style-2 input[type=email],
+.form-style-2 input[type=password],
+.form-style-2 select, 
+.form-style-2 textarea{
+    border: 1px solid #c2ffce;
+    color: #0f580a;
+    box-shadow: inset 1px 1px 4px #d8ffd5;
+    -moz-box-shadow: inset 1px 1px 4px #d8ffd5;
+    -webkit-box-shadow: inset 1px 1px 4px #d8ffd5;
+    background: #effff7 !important;
+}
+.form-style-2 label > span {
+    color: #45b399;
+}
+
+/*    ----------------  end formlayout.css file code  ------------
+
+----------- Start .....   file code ---------------------  */
+

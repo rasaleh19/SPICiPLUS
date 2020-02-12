@@ -1,0 +1,10 @@
+DELETE FROM `data`;
+DELETE FROM `c_input`;
+DELETE FROM `c_output`;
+DELETE FROM `cluster_count`;
+DELETE FROM `cluster_size`;
+ALTER TABLE data AUTO_INCREMENT=1;
+ALTER TABLE c_input AUTO_INCREMENT=1;
+ALTER TABLE c_output AUTO_INCREMENT=1;
+ALTER TABLE cluster_count AUTO_INCREMENT=1;
+ALTER TABLE cluster_size AUTO_INCREMENT=1;

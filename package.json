@@ -1,0 +1,17 @@
+{
+  "name": "spiciplus",
+  "version": "1.0.0",
+  "description": "API to access SPICiPLUS tools",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sayed.ibnmasud@northsouth.edu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "exec-php": "0.0.5",
+    "express": "^4.17.1"
+  }
+}
