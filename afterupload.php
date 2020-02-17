@@ -115,6 +115,10 @@
 			}
 			else return "file not set";
 		}
+		else if($_POST['input_method']=="text"){
+			$data=$_POST['input_text'];
+		}
+
 		else{
 			$data=file_get_contents($_POST['url']);
 		}

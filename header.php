@@ -95,9 +95,9 @@
 
 		        <ul class="nav navbar-nav">
 					<li><a href="index.php">Home</a></li>
-					<li><a href="alchemy.php">Alchemy</a></li>
-					<li><a href="vis.php">Vis</a></li>
-					<li><a href="comparison.php">Alchemy Vs Vis</a></li>
+					<li><a href="visualisation.php">Visualisation</a></li>
+					<!--li><a href="vis.php">Vis</a></li-->
+					<!--li><a href="comparison.php">Alchemy Vs Vis</a></li-->
 					<li><a href="comparison2.php">Comparison</a></li>
 					<li><a href="uploadhistory.php">Upload History</a></li>
 					<li><a href="help.php">Help</a></li>

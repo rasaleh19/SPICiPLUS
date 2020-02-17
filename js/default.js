@@ -48,13 +48,51 @@ $('.carousel').carousel({
   function fileinput(){
     document.getElementById('show-data').style.display='block' ;
     document.getElementById('show-url').style.display='none' ;
-
+    document.getElementById('show-text').style.display='none' ;
   }
 
   function urlinput(){
     document.getElementById('show-data').style.display='none' ;
     document.getElementById('show-url').style.display='block' ;
+    document.getElementById('show-text').style.display='none' ;
   } 
+  function textinput(){
+    document.getElementById('show-data').style.display='none' ;
+    document.getElementById('show-url').style.display='none' ;
+    document.getElementById('show-text').style.display='block' ;
+  } 
+
+  function example1(){
+    fetch('example1.txt')
+    .then(function(response){
+      return response.text();
+    })
+    .then(function(data){
+      document.getElementById('input_text').value= data;  
+    })
+    
+  }
+  function example2(){
+    fetch('example2.txt')
+    .then(function(response){
+      return response.text();
+    })
+    .then(function(data){
+      document.getElementById('input_text').value= data;  
+    })
+    
+  }
+  function example3(){
+    fetch('example3.txt')
+    .then(function(response){
+      return response.text();
+    })
+    .then(function(data){
+      document.getElementById('input_text').value= data;  
+    })
+    
+  }
+
 
 // for sinup form -----------
 

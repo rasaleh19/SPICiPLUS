@@ -5,11 +5,19 @@
 
 	<form method="POST" action="afterupload.php"  enctype="multipart/form-data">
 
-		<label><span> Input method </span> : &nbsp; &nbsp; <input type="radio" name="input_method" value="file" onclick="fileinput()" checked >&nbsp; File &nbsp; <input type="radio" name="input_method" value="url" onclick="urlinput()" >&nbsp; Url </label><br>
+		<label><span> Input method </span> : &nbsp; &nbsp; <input type="radio" name="input_method" value="file" onclick="fileinput()" checked >&nbsp; File &nbsp; <input type="radio" name="input_method" value="url" onclick="urlinput()" >&nbsp; Url &nbsp;
+		<input type="radio" name="input_method" value="text" onclick="textinput()">&nbsp; Text &nbsp;</label><br>
 
 		<label id="show-data"><span> Input File(Data Set) </span> : &nbsp; &nbsp; <input type="file" name="data" class="btn btn-default"></label>
 
 		<label id="show-url" style="display:none"><span> Insert URL Link</span> : &nbsp; &nbsp;<input type="url" name="url" ></label>
+
+		<label id="show-text" style="display:none"><span> Insert Input graph</span> : &nbsp; &nbsp;<textarea class="form-control" id="input_text" name="input_text" placeholder="Insert input graph" style="width: 100%;" rows="10"></textarea> <br>
+			&nbsp; &nbsp; <input type="button" value="Example 1" style="width: 30%;" onclick="example1()" > &nbsp; &nbsp;
+			<input type="button" value="Example 2" style="width: 30%;" onclick="example2()" > &nbsp; &nbsp;
+			<input type="button" value="Example 3" style="width: 30%;" onclick="example3()" >
+		</label>
+
 
 		<label><span>Choose Clustering Algorithm </span> :   &nbsp; &nbsp;
 								<select name="cprogram" required class="btn btn-success">
