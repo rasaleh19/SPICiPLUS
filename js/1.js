@@ -67,3 +67,16 @@ function init() {
 	//i++;
   }
 }
+
+
+// for guest login
+function guestLogin1(){
+  window.location.href = 'aftersignin.php?guest=true';
+}
+
+
+
+//output graph downlod from alchemyview and visview pages
+function downloadOP(){
+  window.location.href = 'download.php?dl='+document.getElementById('cid').value+'&type='+document.getElementById('type').value;
+}

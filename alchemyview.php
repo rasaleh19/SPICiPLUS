@@ -23,7 +23,7 @@
 	if(isset($_GET['c_input_id']) && isset($_GET['type'])){ //c_iput.id=output_id and type=program_id
 		$cid=$_GET['c_input_id'];
 		$type=$_GET['type'];
-		echo $cid;
+		//echo $cid;
 		$sql="SELECT info FROM c_output WHERE data_id=$cid AND program_id=$type ORDER BY id";
 		$result = mysqli_query($db,$sql);
 		//$fw=$filename=$c_input_id."_".$type;
@@ -78,7 +78,14 @@
 				$_GET["program_id"]=$_GET["type"];
 				include_once("comparison5.php");
 			?></td>
+			<td align="center"> 
+				<!--form method="post"-->  
+        			<input type="hidden" id="cid" value="<?php echo $cid ?>">
+        			<input type="hidden" id="type" value="<?php echo $type ?>"> &nbsp;&nbsp;&nbsp;
+        			<input type="button" class="btn btn-success" name="Download" value="Download Output Graph" onclick="downloadOP()"/>
+        		<!--/form--></td>
 			</tr></table>
+
 			<div class="alchemy" id="alchemy"></div>
 			<script type="text/javascript">
 			    alchemy.begin({

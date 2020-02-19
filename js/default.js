@@ -93,6 +93,8 @@ $('.carousel').carousel({
     
   }
 
+// for upload history guest login check
 
-// for sinup form -----------
-
+function hideuploadhistory(){
+  document.getElementById("upload-history").style.display = "none";
+}

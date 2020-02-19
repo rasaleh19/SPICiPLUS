@@ -12,8 +12,6 @@
 
 	<div class="row alchemy-page-first-row">	
 
-
-
 		<div class="col-md-4 col-md-offset-2">
 			<img class="img-responsive" src="images/alchemy1.jpg">
 		</div>

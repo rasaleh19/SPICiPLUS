@@ -251,6 +251,12 @@
 				$_GET["program_id"]=$_GET["type"];
 				include_once("comparison5.php");
 			?></td>
+			<td align="center"> 
+				<!--form method="post"-->  
+        			<input type="hidden" id="cid" value="<?php echo $cid ?>">
+        			<input type="hidden" id="type" value="<?php echo $type ?>"> &nbsp;&nbsp;&nbsp;
+        			<input type="button" class="btn btn-success" name="Download" value="Download Output Graph" onclick="downloadOP()"/>
+        		<!--/form--></td>
 			</tr></table>
 			<div id="mynetwork"></div>
 			<script type="text/javascript">draw();</script>

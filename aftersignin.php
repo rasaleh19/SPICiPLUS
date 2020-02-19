@@ -2,6 +2,13 @@
 	include_once("config.php");
 	session_start();
 	function signin($db){
+
+		if(isset($_GET["guest"]) && $_GET["guest"]=="true"){
+			console.log($_GET["guest"]);
+			$_POST["username"] = "guest";
+			$_POST["password"] = "guest-pass-x56@skaj%^&*";
+		}
+
 		if(isset($_POST["username"]))$username=$_POST["username"];
 		else return "username not set";
 		if(isset($_POST["password"]))$password=$_POST["password"];
@@ -30,3 +37,5 @@
 	}
 	
 ?>
+
+<form action="aftersignin.php?guest=" method="POST"></form>
