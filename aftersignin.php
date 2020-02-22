@@ -5,8 +5,10 @@
 
 		if(isset($_GET["guest"]) && $_GET["guest"]=="true"){
 			console.log($_GET["guest"]);
+			$_GET["guest"]=="false";
 			$_POST["username"] = "guest";
 			$_POST["password"] = "guest-pass-x56@skaj%^&*";
+			$_POST["nextpage"] = $_GET["nextpage"];
 		}
 
 		if(isset($_POST["username"]))$username=$_POST["username"];
@@ -38,4 +40,4 @@
 	
 ?>
 
-<form action="aftersignin.php?guest=" method="POST"></form>
+<form action="aftersignin.php?guest=&amp;nextpage=" method="POST"></form>

@@ -36,7 +36,7 @@
 		<script src="js/visdata.js"></script>
 		<script src="js/visdraw.js"></script>
 		
-		<script src="js/1.js" type="text/javascript"></script>			
+		<script src="js/1.js?1" type="text/javascript"></script>			
 		
 	</head>
 	<body>

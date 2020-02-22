@@ -14,10 +14,10 @@
 						<label for="field2"><span>Password <span class="required">*</span></span><input type="password" id="password" name="password" class="input-field" required /></label>
 
 						<small>&nbsp;</small><input type="submit" id="login-submit" value="Sign in" class="btn btn-success" />
-						&nbsp;&nbsp;<input type="button"  value="Guest login" class="btn btn-success" onclick="guestLogin1()" />  
-						<!--a style="text-decoration: underline;" onclick="">try it without login</a-->
-						<input type="hidden" name="nextpage" value="<?php echo isset($nextpage)?$nextpage:"";?>">
 						
+						<!--a style="text-decoration: underline;" onclick="">try it without login</a-->
+						<input type="hidden" id="nextpage" name="nextpage" value="<?php echo isset($nextpage)?$nextpage:"";?>">
+						&nbsp;&nbsp;<input type="button"  value="Guest login" class="btn btn-success" onclick="guestLogin1()" />  
 					</fieldset>
 
 				</form>

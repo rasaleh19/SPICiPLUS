@@ -71,7 +71,7 @@ function init() {
 
 // for guest login
 function guestLogin1(){
-  window.location.href = 'aftersignin.php?guest=true';
+  window.location.href = 'aftersignin.php?guest=true'+'&nextpage='+document.getElementById('nextpage').value;
 }
 
 
